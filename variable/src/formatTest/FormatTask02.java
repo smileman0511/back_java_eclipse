@@ -1,0 +1,33 @@
+package formatTest;
+
+public class FormatTask02 {
+	public static void main(String[] args) {
+		int kor = 0, math = 0, eng = 0, total = 0;
+		String name = null, str = null, strName = null, strKor = null, strMath = null, strEng = null, strTotal = null;
+		
+		name = "강대훈";
+		kor = 88;
+		math = 92;
+		eng = 100;
+		total = kor + math + eng;
+		
+		System.out.printf("이름: %5s\n", name);
+		System.out.printf("국어: %5d점\n", kor);
+		System.out.printf("수학: %5d점\n", math);
+		System.out.printf("영어: %5d점\n", eng);
+		System.out.printf("총점: %5d점\n", total);
+		
+		System.out.println("");
+		
+		strName = "이름: %5s\n";
+		System.out.printf(strName, name);
+		strKor = "국어: %5d점\n";
+		System.out.printf(strKor, kor);
+		strMath = "수학: %5d점\n";
+		System.out.printf(strMath, math);
+		strEng = "영어: %5d점\n";
+		System.out.printf(strEng, eng);
+		strTotal = "총점: %5d점\n";
+		System.out.printf(strTotal, total);
+	}
+}

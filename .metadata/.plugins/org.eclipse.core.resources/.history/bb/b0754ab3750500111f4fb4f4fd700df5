@@ -1,0 +1,25 @@
+package variableTask;
+
+public class VariableTask01 {
+   public static void main(String[] args) {
+//      각 데이터에 맞는 타입 선언 후 출력하기
+//      5, false, 7845.12, B, 자바, 107L
+	   
+	   int num5 = 5;
+	   boolean trueOrFalse = false;
+	   double doubleNum = 7845.12;
+	   char letterB = 'B';
+	   String javaStr = "자바";
+	   String str = "107L";
+	   long num107 = 107;
+	   
+	   System.out.println(num5);
+	   System.out.println(trueOrFalse);
+	   System.out.println(doubleNum);
+	   System.out.println(letterB);
+	   System.out.println(javaStr);
+	   System.out.println(str);
+	   System.out.println(num107);
+	   
+   }
+}
