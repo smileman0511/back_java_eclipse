@@ -2,7 +2,7 @@ package switchTask;
 
 import java.util.Scanner;
 
-public class SwtichTask {
+public class SwitchTask {
    public static void main(String[] args) {
 //      계절 맞추기
 //      12 1 2 겨울

@@ -17,7 +17,7 @@ public class OperTask02 {
 		resultMsg = animal.equals(cat) ? catMsg 
 				: animal.equals(cow) ? cowMsg 
 					: animal.equals(dog) ? dogMsg 
-						: animal.equals(gora) ? goraMsg 
+						: animal.equals(gora) ? goraMsg
 							:wrongMsg;
 		
 		System.out.println(resultMsg);
