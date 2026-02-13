@@ -21,40 +21,46 @@ public class ArrayTask04 {
 //      자바에서는 구분점을 여러 개 전달할 수 있으며 여러개를 전달할 때에는 | 연산자를 이용한다
 //      예를 들어 +, -를 구분점으로 자른다면 .split(\\+|\\-)로 전달해야한다.
 //      \\는 제어문자가 아닌 문자열로 인식하기 위함이다.
-
 		Scanner sc = new Scanner(System.in);
+		String message = "수식을 입력하세요.\n10+10+2", expression = null;
+		String[] values = null;
+		String[] opers = null;
+		int operCount = 0, result = 0, index = 0;
 
-		System.out.print("수식을 입력하세요: ");
-		String input = sc.nextLine().replace(" ", "");
+//      .trim(): 양쪽 공백 제거
+//      System.out.println(" 77ㅓ억 ".trim());
 
-		String[] numbers = input.split("\\+|\\-");
-		String operators = input.replaceAll("[0-9]", "");
+		System.out.println(message);
+		expression = sc.nextLine();
+		values = expression.split("\\+|\\-");
 
-		int startIdx = 0;
-		int res = 0;
+		opers = new String[values.length - 1];
 
-		if (input.startsWith("-")) {
-			res = -Integer.parseInt(numbers[1]);
-			startIdx = 1;
-		} else {
-			res = Integer.parseInt(numbers[0]);
-		}
-
-		for (int i = 0; i < operators.length(); i++) {
-			char op = operators.charAt(i);
-
-			if (i == 0 && input.startsWith("-"))
+		for (int i = 0; i < expression.length(); i++) {
+			char c = expression.charAt(i);
+			if (c == '+' || c == '-') {
+				opers[operCount] = String.valueOf(c);
+				operCount++;
 				continue;
-
-			int nextNum = Integer.parseInt(numbers[startIdx + 1]);
-			if (op == '+') {
-				res += nextNum;
-			} else if (op == '-') {
-				res -= nextNum;
 			}
-			startIdx++;
 		}
 
-		System.out.println(res);
+//      첫 번째가 음수인지 아닌지
+//      1. values[0] 공백이라면 음수
+		if (values[0].equals("")) {
+			result = Integer.parseInt(opers[0] + values[1]);
+			index = 2;
+		} else {
+			result = Integer.parseInt(values[0]);
+			index = 1;
+		}
+
+//      2. 계산
+		for (int i = values[0].equals("") ? 1 : 0; i < opers.length; i++) {
+			result += Integer.parseInt(opers[i] + values[index]);
+			index++;
+		}
+
+		System.out.println(result);
 	}
 }
