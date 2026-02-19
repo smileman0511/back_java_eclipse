@@ -1,57 +1,114 @@
 package methodTask;
 
-import java.util.Scanner;
-
 public class MethodTask05 {
-	String[] intDivide(String msg) {
-		String result = ""; // 숫자를 담을 빈 문자열 생성
+   
+   public String convertFormat(int num) {
+      String[] nums = {"공", "일", "이", "삼", "사", "오", "육", "칠", "팔", "구"};
+      String[] units = {"", "십", "백", "천"};
+      String result = "";
+      int temp = num;
+      
+      for(int i = 0; i < units.length; i++) {
+         int digit = temp % 10;
+         if(digit != 0) {
+            result = nums[digit] + units[i] + result;
+         }
+         temp /= 10;
+      }
+      
+      return result;
+   }
+   
+   String numberToHanglesUnit(int num) {
+      String result = "";
+      
+      int man = num / 10000;
+      int rest = num % 10000;
+      
+      if(man > 0) {
+         result += this.convertFormat(man) + "만";
+      }
 
-		for (int i = 0; i < msg.length(); i++) {
-			char ch = msg.charAt(i);
-			if (ch >= 48 && ch <= 57) {
-				result += ch; // 숫자를 발견하면 결과 문자열에 추가
-			}
-		}
+      if(rest > 0) {
+         result += this.convertFormat(rest);
+      }
+      
+      if(num == 0) {
+         result = "영";
+      }
+      
+      return result;
+   }
+   
 
-		return result;
-	}
+   String numberToHangles(String number) {
+      String integerPartStr = "", floatPartStr = "", result = "";
+      
+      int integerPart = 0;
+      double floatNumber = 0.0, floatPart = 0.0;
 
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-//      2. 사용자가 입력하는 값중 정수 분리하기
-//      입력 예시)
-//      안1녕2하3세4요
-//      출력 예시)
-//      1234
-		String msg = null;
-		System.out.println("입력: \nex) 안1녕2하3세4요");
-		msg = sc.nextLine();
-
-		// 메서드를 호출하고 반환된 리턴 값을 변수에 저장
-		String filteredNumbers = intDivide(msg);
-
-		// 출력 예시
-		System.out.println("출력 예시)");
-		System.out.println(filteredNumbers);
-
-//      3. 사용자가 입력한 글자와 찾을 글자를 입력하면 글자의 개수를 반환해주는 메서드
-//      입력 예시) apple
-//      찾을 글자 p
-//      반환 2
-
-//      4. 5개 정수를 배열로 마구잡이로 전달할 때 가장 작은 2개의 숫자를 배열에 담아 전달하는 메서드
-
-//      5. 랜덤한 값을 100칸 배열에 담은 후 배열 안의 값 중 홀수의 합만 출력
-
-//      6. 연속된 중복 문자 제거하기
+      floatNumber = Double.parseDouble(number);
+      
+      if (floatNumber < 0) {
+         result += "마이너스";
+      }
+      
+      integerPartStr = number.split("\\.")[0];
+      floatPartStr = number.split("\\.")[1];
+      
+      
+//      정수 부분
+      integerPart = Integer.parseInt(integerPartStr);
+      if(integerPart < 0) {
+         integerPart *= -1;
+      }
+      result += this.numberToHanglesUnit(integerPart);
+      
+      floatPart = Integer.parseInt(floatPartStr);
+      
+//      소수 부분
+      if(floatPart > 0) {
+         result += "점";
+         result += this.numberToHanglesUnit((int)floatPart);
+      }
+      
+      return result;
+   }
+   
+   
+   public static void main(String[] args) {
+      
+//      사용자는 1 ~ 999까지만 입력가능
+      
+//      마스터. 1
+//      1. 소수 변환기
+//      사용자의 입력값을 읽어 문자열로 출력하시오
 //      입력 예시1)
-//      abbbbacda
+//      12.34
 //      출력 예시1)
-//      aacda
-
+//      십이점삼사
+      
 //      입력 예시2)
-//      aabbccccd
+//      -57
 //      출력 예시2)
-//      abcd
-	}
+//      마이너스오십칠
+      
+//      -237.27
+//      마이너스이백삼십칠점이십칠
+      
+      MethodTask05 mt5 = new MethodTask05();
+      System.out.println(mt5.numberToHangles("17.1"));
+      System.out.println(mt5.numberToHangles("-127.18"));
+      
+      
+      
+   }
 }
+
+
+
+
+
+
+
+
