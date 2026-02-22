@@ -22,7 +22,6 @@ class PersonTask {
 		this.phoneNumber = phoneNumber;
 	}
 
-
 	void work() {
 		System.out.println("일을 한다.");
 	}

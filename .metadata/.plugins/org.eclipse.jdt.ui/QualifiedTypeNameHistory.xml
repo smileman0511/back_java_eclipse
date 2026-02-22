@@ -27,10 +27,17 @@
     <fullyQualifiedTypeName name="classTask.Student"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="classTask.PlayerA"/>
-    <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="inheritanceTest.SuperCar"/>
     <fullyQualifiedTypeName name="access1.Access1"/>
     <fullyQualifiedTypeName name="inheritanceTest.Animal"/>
     <fullyQualifiedTypeName name="inheritanceTest.Animal2"/>
     <fullyQualifiedTypeName name="inheritanceTask.Phone"/>
+    <fullyQualifiedTypeName name="inheritancePractice.Employee"/>
+    <fullyQualifiedTypeName name="inheritancePractice.Developer"/>
+    <fullyQualifiedTypeName name="inheritancePractice.ProjectManager"/>
+    <fullyQualifiedTypeName name="java.lang.Comparable"/>
+    <fullyQualifiedTypeName name="inheritancePractice.Computer"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="inheritancePractice.Laptop"/>
+    <fullyQualifiedTypeName name="inheritancePractice.HighEndLaptop"/>
 </qualifiedTypeNameHistroy>
