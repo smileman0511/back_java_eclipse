@@ -6,7 +6,7 @@ public class Market {
 	private int productCount;
 
 	public Market() {
-		;
+;
 	}
 
 	public Market(String name, String[] productList, int productCount) {
@@ -85,14 +85,23 @@ public class Market {
 		System.out.println("[상품 등록 완료] " + product.getName() + " 이(가) 상품 목록에 등록되었습니다.");
 	}
 
-//	3. 포인트 적립
-	public void pointSave() {
+	// 3. 포인트 적립 (결제 금액을 매개변수로 받아 적립액 계산)
+    public void pointSave(Customer customer, int payPrice) {
+        int pointToSave = 0;
+        if (customer instanceof MarketMember) {
+            pointToSave = (int) (payPrice * 0.10); // 회원 10%
+        } else if (customer instanceof MarketNonMember) {
+            pointToSave = (int) (payPrice * 0.05); // 비회원 5%
+        }
+        
+        customer.setPoint(customer.getPoint() + pointToSave);
+        System.out.println(pointToSave + "포인트가 적립되었습니다. (누적: " + customer.getPoint() + "P)");
+    }
 
-	}
-
-//	4. 비회원 쿠폰 이벤트
-	public void nonMemberCouponEvent() {
-
-	}
+    // 4. 비회원 쿠폰 이벤트
+    public void nonMemberCouponEvent(MarketNonMember nonMember) {
+        nonMember.setCoupon(nonMember.getCoupon() + 1);
+        System.out.println("비회원 구매 쿠폰 1장이 지급되었습니다. (누적: " + nonMember.getCoupon() + "장)");
+    }
 
 }

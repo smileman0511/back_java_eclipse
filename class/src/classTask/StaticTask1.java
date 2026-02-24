@@ -13,7 +13,6 @@ class Company {
 	}
 }
 
-
 public class StaticTask1 {
 	public static void main(String[] args) {
 		Company employee1 = new Company("홍길동", 20);
