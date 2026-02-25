@@ -1,15 +1,12 @@
 package interfaceTask1;
 
 public class PersonActionAdapter extends Person implements PersonAction {
-	
-	public PersonActionAdapter() {;}
-	
 
+	public PersonActionAdapter() {;}
 	public PersonActionAdapter(String name, int age) {
 		super(name, age);
 	}
-
-
+	
 	@Override
 	public void eat() {;}
 
@@ -17,6 +14,6 @@ public class PersonActionAdapter extends Person implements PersonAction {
 	public void goToSchool() {;}
 
 	@Override
-	public void goToWork() {;}
+	public void goToCompany() {;}
 
 }
