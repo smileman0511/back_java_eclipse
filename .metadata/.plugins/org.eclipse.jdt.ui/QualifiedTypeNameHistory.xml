@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="inheritancePractice.Developer"/>
-    <fullyQualifiedTypeName name="inheritancePractice.ProjectManager"/>
-    <fullyQualifiedTypeName name="java.lang.Comparable"/>
-    <fullyQualifiedTypeName name="inheritancePractice.Computer"/>
-    <fullyQualifiedTypeName name="java.lang.Override"/>
-    <fullyQualifiedTypeName name="inheritancePractice.Laptop"/>
-    <fullyQualifiedTypeName name="inheritancePractice.HighEndLaptop"/>
-    <fullyQualifiedTypeName name="classTest.Car"/>
-    <fullyQualifiedTypeName name="classTest.SuperCar"/>
-    <fullyQualifiedTypeName name="classTask1.Genre"/>
-    <fullyQualifiedTypeName name="classTask1.Animation"/>
-    <fullyQualifiedTypeName name="classTask1.Drama"/>
     <fullyQualifiedTypeName name="java.lang.Module"/>
     <fullyQualifiedTypeName name="classTask1.Movie"/>
     <fullyQualifiedTypeName name="classTask1.Netflix"/>
@@ -28,7 +16,6 @@
     <fullyQualifiedTypeName name="classTask2.FairyReward"/>
     <fullyQualifiedTypeName name="classTask3.Harbivore"/>
     <fullyQualifiedTypeName name="classTask3.Animal"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="classTask4.Customer"/>
     <fullyQualifiedTypeName name="classTask4.Product"/>
     <fullyQualifiedTypeName name="abstractTest.Electronics"/>
@@ -48,7 +35,6 @@
     <fullyQualifiedTypeName name="innerClassTest.InnerClassTest.InnerClass"/>
     <fullyQualifiedTypeName name="anonymousTest.Study"/>
     <fullyQualifiedTypeName name="anonymousTest.Form"/>
-    <fullyQualifiedTypeName name="java.lang.StackOverflowError"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthTabbedPaneUI"/>
     <fullyQualifiedTypeName name="anonymousTest.Starbucks"/>
     <fullyQualifiedTypeName name="anonymousTest.EventMaker"/>
@@ -59,5 +45,19 @@
     <fullyQualifiedTypeName name="lambdaTask1.OneToTen"/>
     <fullyQualifiedTypeName name="java.util.concurrent.ConcurrentHashMap"/>
     <fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
+    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="arrayListTest.ArrayListTest"/>
+    <fullyQualifiedTypeName name="ArrayListTask1.ArrayListTask1"/>
+    <fullyQualifiedTypeName name="java.lang.InternalError"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.AbstractMethodError"/>
+    <fullyQualifiedTypeName name="exceptionTest.BadWordException"/>
+    <fullyQualifiedTypeName name="java.lang.StackOverflowError"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="arrayList.task.DBConnecter"/>
+    <fullyQualifiedTypeName name="arrayList.task.UserField"/>
 </qualifiedTypeNameHistroy>
