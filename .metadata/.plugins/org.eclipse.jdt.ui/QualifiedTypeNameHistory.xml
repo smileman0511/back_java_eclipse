@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.Module"/>
-    <fullyQualifiedTypeName name="classTask1.Movie"/>
-    <fullyQualifiedTypeName name="classTask1.Netflix"/>
-    <fullyQualifiedTypeName name="classTask2.HuntOak"/>
-    <fullyQualifiedTypeName name="classTask2.HuntFairy"/>
-    <fullyQualifiedTypeName name="classTask2.HuntHuman"/>
-    <fullyQualifiedTypeName name="classTask2.HuntMonster"/>
-    <fullyQualifiedTypeName name="classTask2.Human"/>
     <fullyQualifiedTypeName name="classTask2.Fairy"/>
     <fullyQualifiedTypeName name="classTask2.Information"/>
     <fullyQualifiedTypeName name="classTask2.Hunt"/>
@@ -57,7 +49,15 @@
     <fullyQualifiedTypeName name="exceptionTest.BadWordException"/>
     <fullyQualifiedTypeName name="java.lang.StackOverflowError"/>
     <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="arrayList.task.DBConnecter"/>
     <fullyQualifiedTypeName name="arrayList.task.UserField"/>
+    <fullyQualifiedTypeName name="hashset.test.HashSetTest"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="hashset.task.HashSetTask"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.security.KeyStore.Entry"/>
+    <fullyQualifiedTypeName name="java.util.Map.Entry"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
 </qualifiedTypeNameHistroy>
