@@ -37,11 +37,5 @@ public class JsonTask {
 		
 		System.out.println(path);
 		
-		
-		
-		
-		
-		
-		
 	}
 }

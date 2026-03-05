@@ -1,0 +1,21 @@
+package dateTest;
+
+import java.util.Date;
+import java.text.SimpleDateFormat;
+
+public class DateTest {
+	public static void main(String[] args) {
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy년 MM월 dd일 hh시 mm분 ss초");
+		Date date = new Date();
+		System.out.println(date);
+		System.out.println(simpleDateFormat.format(date));
+		
+//		.parse()
+		try {
+			simpleDateFormat.parse("2026년 03월 05일 10시 39분 10초");
+			System.out.println(simpleDateFormat.parse("2026년 03월 05일 10시 39분 10초"));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}
